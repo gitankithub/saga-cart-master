@@ -8,7 +8,7 @@ const CardController = {
     if (!cart) {
       return res
         .status(404)
-        .json({ error: 'No cart with the specified owner !', owner });
+        .json({ error: 'No cart with the specified owner', owner });
     }
     if (!card) {
       res.status(500).send({ error: `No card is available for user ${owner}` });
